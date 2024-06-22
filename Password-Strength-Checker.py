@@ -1,7 +1,4 @@
-import re
-
-def password_strength(password):
-    """
+"""
     Evaluates the strength of a password based on the following criteria:
     - Length: at least 12 characters
     - Uppercase letters: at least 1
@@ -19,6 +16,10 @@ def password_strength(password):
         - 5: Very strong (meets all 5 criteria)
     - 'feedback': a list of suggestions for improving the password
     """
+
+import re
+
+def password_strength(password):
     feedback = []
     score = 0
 
